@@ -11,13 +11,7 @@ class SortTask implements Runnable {
         if (mainFrame.graph == null) {
             return;
         }
-        while (mainFrame.graph.sortOneStep()) {
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException ex) {
-                ex.printStackTrace();
-            }
-        }
+        mainFrame.graph.topologySort();
         flag = false;
     }
 }

@@ -19,15 +19,14 @@ public class MatrixPanel extends JPanel {
             return;
         }
         int n = mainFrame.graph.getvNum();
-        setLayout(new GridLayout(n, n));
-        int w=0,h=0;
+        int w=0,h=mainFrame.getHeight()/(n+10);
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < n; j++) {
                 int v = mainFrame.graph.getMatrixValue(i, j);
                 g2.drawString(Integer.toString(v), w, h);
-                w += this.getWidth()/10;
+                w += this.getWidth()/(n+10);
             }
-            h += this.getWidth()/10;
+            h += this.getWidth()/(n+10);
             w = 0;
         }
     }

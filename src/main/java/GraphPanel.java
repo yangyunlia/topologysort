@@ -22,11 +22,20 @@ public class GraphPanel extends JPanel {
         int n = mainFrame.graph.getvNum();
         for (int i = 0; i < n; i++) {
             int []p = mainFrame.graph.getPosition(i);
-            double x = p[0]/100.0*(this.getWidth() - 50);
-            double y =  p[1]/100.0*(this.getHeight() -50);
+            double x = p[0]/100.0*(this.getWidth() - 100);
+            double y =  p[1]/100.0*(this.getHeight() -100);
             Ellipse2D e = new Ellipse2D.Double(x, y, 20,20);
-            g2.draw(e);
-            g2.drawString(Integer.toString(i), (float) x+5, (float)y+15);
+            int c = mainFrame.graph.result.indexOf(i);
+            if(c != -1) {
+                g2.drawString(Integer.toString(c), (float) x, (float)y + 3);
+                g2.setColor(Color.red);
+                g2.draw(e);
+            } else {
+                g2.setColor(Color.black);
+                g2.draw(e);
+            }
+            g2.setColor(Color.black);
+            g2.drawString(Integer.toString(i), (float) x+8, (float)y+15);
         }
 
         for(int i = 0;i < n; i++) {

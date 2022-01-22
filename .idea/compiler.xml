@@ -9,5 +9,8 @@
         <module name="topologysort" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="topologysort" target="16" />
+    </bytecodeTargetLevel>
   </component>
 </project>

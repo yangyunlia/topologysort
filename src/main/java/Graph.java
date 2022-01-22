@@ -12,8 +12,8 @@ public class Graph {
     private int []inDegree;
     private int []outDegree;
     private JFrame mainJFrame;
-    private LinkedList<Integer> hList =  null;
-    public ArrayList<Integer> sortList = new ArrayList<>();
+    LinkedList<Integer> result = new LinkedList<>();
+    public ArrayList<Integer[]> sortList = new ArrayList<>();
     Graph(int vNum, JFrame mainJFrame) {
         this.mainJFrame = mainJFrame;
         this.vNum = vNum;
@@ -23,8 +23,8 @@ public class Graph {
         position = new int[vNum][2];
         Random r = new Random();
         for(int i = 0;i < vNum; i++) {
-            position[i][0] = r.nextInt(0, 100);
-            position[i][1] = r.nextInt(0, 100);
+            position[i][0] = r.nextInt(100);
+            position[i][1] = r.nextInt(100);
             inDegree[i] = 0;
             outDegree[i] = 0;
             for(int j = 0;j < vNum; j++) {
@@ -63,37 +63,56 @@ public class Graph {
         mainJFrame.repaint();
     }
 
-    public boolean sortOneStep() {
-        if(hList == null) {
-            sortList.clear();
-            hList = new LinkedList<>();
-            for(int i = 0;i < vNum; i++) {
-                if(inDegree[i] == 0) {
-                    hList.add(i);
-                }
+    public void topologySort() {
+        LinkedList<Integer> list = new LinkedList<>();
+        for (int i = 0; i < vNum; i++) {
+            if(inDegree[i] == 0) {
+                list.add(i);
             }
         }
-        if(hList.isEmpty()) {
-            hList = null;
-            return false;
+        sort(list);
+    }
+
+    public void sort(LinkedList<Integer> nodes) {
+        if(result.size() == vNum) {
+            Integer[] r = new Integer[result.size()];
+            for (int i = 0; i < result.size(); i++) {
+                r[i] = result.get(i);
+            }
+            this.sortList.add(r);
+            mainJFrame.repaint();
+            return;
         }
-        int a = hList.poll();
-        sortList.add(a);
-        for(int i = 0;i < vNum; i++) {
-            if(matrix[a][i] == 1) {
-                matrix[a][i] = 0;
-                inDegree[i]--;
-                if(inDegree[i] == 0) {
-                    if (outDegree[i] == 0) {
-                        sortList.add(i);
-                    } else {
-                        hList.add(i);
-                        break;
+        for (int i = 0; i < nodes.size(); i++) {
+            int s = nodes.get(i);
+            result.add(s);
+            mainJFrame.repaint();
+            try {
+                Thread.sleep(1000);
+            }catch (Exception e) {
+
+            }
+            LinkedList<Integer> l = new LinkedList<>();
+            for (int j = 0;j < nodes.size(); j ++) {
+                if(j != i) {
+                    l.add(nodes.get(j));
+                }
+            }
+            for(int j = 0;j < vNum; j++) {
+                if(matrix[s][j] != 0) {
+                    inDegree[j]--;
+                    if(inDegree[j] == 0) {
+                        l.add(j);
                     }
                 }
             }
+            sort(l);
+            for(int j = 0;j < vNum; j++) {
+                if(matrix[s][j] != 0) {
+                    inDegree[j]++;
+                }
+            }
+            result.removeLast();
         }
-        mainJFrame.repaint();
-        return true;
     }
 }

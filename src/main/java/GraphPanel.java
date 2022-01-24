@@ -45,6 +45,12 @@ public class GraphPanel extends JPanel {
             double yi =  pi[1]/100.0*(this.getHeight() -100)+6;
             for (int j = 0;j < n; j++) {
                 if(mainFrame.graph.getMatrixValue(i, j) != 0) {
+                    int c = mainFrame.graph.result.indexOf(i);
+                    if(c != -1) {
+                        g2.setColor(Color.red);
+                    } else {
+                        g2.setColor(Color.black);
+                    }
                     int []pj = mainFrame.graph.getPosition(j);
                     double xj = pj[0]/100.0*(this.getWidth() - 100)+12;
                     double yj =  pj[1]/100.0*(this.getHeight() -100)+12;

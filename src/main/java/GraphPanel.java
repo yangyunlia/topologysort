@@ -40,13 +40,13 @@ public class GraphPanel extends JPanel {
 
         for(int i = 0;i < n; i++) {
             int []pi = mainFrame.graph.getPosition(i);
-            double xi = pi[0]/100.0*(this.getWidth() - 50)+14;
-            double yi =  pi[1]/100.0*(this.getHeight() -50)+14;
+            double xi = pi[0]/100.0*(this.getWidth() - 100)+6;
+            double yi =  pi[1]/100.0*(this.getHeight() -100)+6;
             for (int j = 0;j < n; j++) {
                 if(mainFrame.graph.getMatrixValue(i, j) != 0) {
                     int []pj = mainFrame.graph.getPosition(j);
-                    double xj = pj[0]/100.0*(this.getWidth() - 50)+14;
-                    double yj =  pj[1]/100.0*(this.getHeight() -50)+14;
+                    double xj = pj[0]/100.0*(this.getWidth() - 100)+12;
+                    double yj =  pj[1]/100.0*(this.getHeight() -100)+12;
                     Line2D line2D = new Line2D.Double(xi, yi, xj, yj);
                     g2.draw(line2D);
                     GeneralPath l = new GeneralPath();

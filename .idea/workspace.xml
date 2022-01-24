@@ -5,32 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1207e4ca-28e0-40d8-afcc-245126166d9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/topologysort.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FootPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FootPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GraphPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Head.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MatrixPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatrixPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FootPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FootPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Graph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/GraphPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GraphPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Head$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Head$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Head$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Head$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Head$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Head$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Head.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Head.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MatrixPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MatrixPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SortTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortTask.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +29,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="D:/jdk/lib/src.zip" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -62,19 +40,6 @@
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="topologysort" />
       <option name="VM_PARAMETERS" value="-Dfile.encoding=gbk" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,7 +59,8 @@
       <option name="presentableId" value="Default" />
       <updated>1642853902579</updated>
       <workItem from="1642853905408" duration="318000" />
-      <workItem from="1642854655225" duration="15246000" />
+      <workItem from="1642854655225" duration="15405000" />
+      <workItem from="1643021339491" duration="640000" />
     </task>
     <servers />
   </component>

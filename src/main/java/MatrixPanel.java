@@ -15,6 +15,7 @@ public class MatrixPanel extends JPanel {
         Graphics2D g2 = (Graphics2D) g;
         setBounds(mainFrame.getWidth()/2, mainFrame.getHeight()/10, mainFrame.getWidth()/2, mainFrame.getHeight()*6/10);
         setVisible(true);
+        g2.drawString("邻接矩阵", 30, 10);
         if(mainFrame.graph == null) {
             return;
         }

@@ -18,12 +18,15 @@ public class FootPanel extends JPanel {
         jScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         jScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         add(jScrollPane, BorderLayout.CENTER);
+        JLabel j = new JLabel("拓扑排序");
+        add(j);
     }
     @Override
     public void paintComponent(Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
         setVisible(true);
         setBounds(0,mainFrame.getHeight()*7/10, mainFrame.getWidth(), mainFrame.getHeight()*3/10);
+        g2.drawString("拓扑排序", 0, 30);
         if(mainFrame.graph == null) {
             return;
         }

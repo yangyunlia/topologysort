@@ -31,14 +31,14 @@ public class MatrixPanel extends JPanel {
         g2.drawString("节点", w-10, h);
         h += this.getWidth()/(n+10);
         for(int i = 0; i < n; i++) {
-            g2.drawString(Integer.toString(i), w, h);
             if (mainFrame.flag == 1) {
-                g2.drawRect(w - 8,h -12 ,20,20);
+                g2.drawString(Integer.toString(i), w, h);
+                g2.drawRect(w - 8, h - 12, 20, 20);
                 g2.drawLine(w + 20, h, w + 40, h);
                 g2.drawLine(w + 40, h, w + 35, h - 5);
                 g2.drawLine(w + 40, h, w + 35, h + 5);
+                w += 50;
             }
-            w += 50;
             for(int j = 0; j < n; j++) {
                 int v = mainFrame.graph.getMatrixValue(i, j);
                 if (mainFrame.flag == 1) {

@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1207e4ca-28e0-40d8-afcc-245126166d9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ChooseFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FootPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FootPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GraphPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Head.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MatrixPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatrixPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topologysort.iml" beforeDir="false" afterPath="$PROJECT_DIR$/topologysort.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +72,7 @@
       <workItem from="1643022848054" duration="944000" />
       <workItem from="1643026390674" duration="231000" />
       <workItem from="1643026652295" duration="343000" />
+      <workItem from="1645442444491" duration="731000" />
     </task>
     <servers />
   </component>

@@ -95,6 +95,15 @@ public class Head extends JPanel {
                 mainFrame.graph.addPath(a, b);
             }
         });
+        Button retu = new Button("返回首页");
+        retu.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                that.mainFrame.setVisible(false);
+                new ChooseFrame();
+            }
+        });
+        add(retu);
         add(path);
         add(start);
         add(end);

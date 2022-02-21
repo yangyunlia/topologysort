@@ -34,8 +34,8 @@ public class FootPanel extends JPanel {
         Arrays.fill(data[0], -1);
         t.setBounds(0,mainFrame.getHeight()*7/10, mainFrame.getWidth(), mainFrame.getHeight()*3/10);
         String content = "";
-        for (int i = 0; i < mainFrame.graph.sortList.size(); i++) {
-            Integer []a = mainFrame.graph.sortList.get(i);
+        for (int i = 0; i < mainFrame.graph.getSortList().size(); i++) {
+            Integer []a = mainFrame.graph.getSortList().get(i);
             for(int j = 0; j < a.length; j++) {
                 content += Integer.toString(a[j]) + " ";
             }

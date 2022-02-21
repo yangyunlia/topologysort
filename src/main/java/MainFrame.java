@@ -3,7 +3,9 @@ import java.awt.*;
 
 public class MainFrame extends JFrame {
     Graph graph;
-    MainFrame() {
+    int flag;
+    MainFrame(int f) {
+        flag = f;
         Toolkit kit = Toolkit.getDefaultToolkit();
         Dimension screen = kit.getScreenSize();
         setTitle("拓扑排序");

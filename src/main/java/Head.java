@@ -49,7 +49,11 @@ public class Head extends JPanel {
                     System.out.println("输入节点数量");
                     return;
                 }
-                mainFrame.graph = new Graph(vn, mainFrame);
+                if(mainFrame.flag == 0) {
+                    mainFrame.graph = new GraphMatrix(vn, mainFrame);
+                } else {
+                    mainFrame.graph = new GraphList(vn, mainFrame);
+                }
                 mainFrame.repaint();
             }
         });

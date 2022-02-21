@@ -26,7 +26,7 @@ public class GraphPanel extends JPanel {
             double x = p[0]/100.0*(this.getWidth() - 100);
             double y =  p[1]/100.0*(this.getHeight() -100);
             Ellipse2D e = new Ellipse2D.Double(x, y, 20,20);
-            int c = mainFrame.graph.result.indexOf(i);
+            int c = mainFrame.graph.getResult().indexOf(i);
             if(c != -1) {
                 g2.drawString(Integer.toString(c), (float) x, (float)y + 3);
                 g2.setColor(Color.red);
@@ -45,7 +45,7 @@ public class GraphPanel extends JPanel {
             double yi =  pi[1]/100.0*(this.getHeight() -100)+6;
             for (int j = 0;j < n; j++) {
                 if(mainFrame.graph.getMatrixValue(i, j) != 0) {
-                    int c = mainFrame.graph.result.indexOf(i);
+                    int c = mainFrame.graph.getResult().indexOf(i);
                     if(c != -1) {
                         g2.setColor(Color.red);
                     } else {

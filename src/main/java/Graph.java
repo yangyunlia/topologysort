@@ -15,11 +15,17 @@ public interface Graph {
 
     public void deletePath(int a, int b);
 
-    public void topologySort();
+    public boolean topologySort();
 
     public void sort(LinkedList<Integer> nodes);
 
     public List<Integer> getResult();
 
     public ArrayList<Integer[]> getSortList();
+
+    public void setRunMode(int m);
+
+    public int getRunMode();
+
+    public void oneStep();
 }

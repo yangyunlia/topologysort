@@ -9,9 +9,11 @@ public class GraphMatrix implements Graph{
     private int []inDegree;
     private int []outDegree;
     private JFrame mainJFrame;
+    private int runMode;
     LinkedList<Integer> result = new LinkedList<>();
     public ArrayList<Integer[]> sortList = new ArrayList<>();
     GraphMatrix(int vNum, JFrame mainJFrame) {
+        runMode = 1;
         this.mainJFrame = mainJFrame;
         this.vNum = vNum;
         matrix = new int[vNum][vNum];
@@ -60,7 +62,7 @@ public class GraphMatrix implements Graph{
         mainJFrame.repaint();
     }
 
-    public void topologySort() {
+    public boolean topologySort() {
         LinkedList<Integer> list = new LinkedList<>();
         for (int i = 0; i < vNum; i++) {
             if(inDegree[i] == 0) {
@@ -68,9 +70,14 @@ public class GraphMatrix implements Graph{
             }
         }
         sort(list);
+        JFrame msg = new JFrame();
+        msg.setBounds(300,300, 100, 100);
+        msg.add(new JLabel("完成"));
+        msg.setVisible(true);
+        return true;
     }
 
-    public void sort(LinkedList<Integer> nodes) {
+    public synchronized void sort(LinkedList<Integer> nodes) {
         if(result.size() == vNum) {
             Integer[] r = new Integer[result.size()];
             for (int i = 0; i < result.size(); i++) {
@@ -85,7 +92,11 @@ public class GraphMatrix implements Graph{
             result.add(s);
             mainJFrame.repaint();
             try {
-                Thread.sleep(1000);
+                if(runMode == 1) {
+                    wait();
+                } else {
+                    Thread.sleep(1000);
+                }
             }catch (Exception e) {
 
             }
@@ -111,6 +122,7 @@ public class GraphMatrix implements Graph{
             }
             result.removeLast();
         }
+
     }
 
     public ArrayList<Integer[]> getSortList() {
@@ -119,6 +131,18 @@ public class GraphMatrix implements Graph{
 
     public List<Integer> getResult() {
         return result;
+    }
+
+    public void setRunMode(int m) {
+        runMode = m;
+    }
+
+    public int getRunMode() {
+        return runMode;
+    }
+
+    public synchronized void oneStep() {
+        notify();
     }
 }
 

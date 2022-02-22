@@ -17,6 +17,13 @@ public class GraphPanel extends JPanel {
         setBounds(0, mainFrame.getHeight()/10, mainFrame.getWidth()/2, mainFrame.getHeight()*6/10);
         Graphics2D g2 = (Graphics2D) g;
         g2.drawString("AOV网", 30, 10);
+        if(mainFrame.graph != null) {
+            if(mainFrame.graph.getRunMode() == 1) {
+                g2.drawString("单步", 100, 10);
+            } else {
+                g2.drawString("同步", 100, 10);
+            }
+        }
         if(mainFrame.graph == null) {
             return;
         }

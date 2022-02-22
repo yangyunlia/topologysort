@@ -62,12 +62,13 @@ public class Head extends JPanel {
         sort.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (sortTask.flag) {
-                    return;
+                if (mainFrame.graph.getRunMode() == 0 || !sortTask.flag) {
+                    sortTask.flag = true;
+                    Thread t = new Thread(sortTask);
+                    t.start();
+                } else {
+                    mainFrame.graph.oneStep();
                 }
-                sortTask.flag = true;
-                Thread t = new Thread(sortTask);
-                t.start();
 
             }
         });
@@ -103,9 +104,18 @@ public class Head extends JPanel {
                 new ChooseFrame();
             }
         });
+        Button s =  new Button("单步同步");
+        s.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                mainFrame.graph.setRunMode(1- mainFrame.graph.getRunMode());
+                mainFrame.repaint();
+            }
+        });
         add(retu);
         add(path);
         add(start);
+        add(s);
         add(end);
         add(addPath);
     }

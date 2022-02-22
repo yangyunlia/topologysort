@@ -113,9 +113,9 @@ public class Head extends JPanel {
             }
         });
         add(retu);
+        add(s);
         add(path);
         add(start);
-        add(s);
         add(end);
         add(addPath);
     }

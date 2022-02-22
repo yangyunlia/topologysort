@@ -6,21 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1207e4ca-28e0-40d8-afcc-245126166d9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GraphList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GraphMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GraphPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Head.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GraphList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GraphList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GraphMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GraphMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GraphPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GraphPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Head$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Head$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Head$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Head$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Head$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Head$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Head.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Head.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MatrixPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MatrixPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SortTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortTask.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +75,9 @@
       <workItem from="1643026652295" duration="343000" />
       <workItem from="1645442444491" duration="1059000" />
       <workItem from="1645443987156" duration="1055000" />
-      <workItem from="1645531623203" duration="2435000" />
+      <workItem from="1645531623203" duration="2530000" />
+      <workItem from="1645534511754" duration="28000" />
+      <workItem from="1645536927779" duration="1748000" />
     </task>
     <servers />
   </component>
@@ -113,11 +103,6 @@
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="5" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GraphMatrix.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

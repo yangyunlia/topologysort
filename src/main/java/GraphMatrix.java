@@ -74,6 +74,7 @@ public class GraphMatrix implements Graph{
         msg.setBounds(300,300, 100, 100);
         msg.add(new JLabel("完成"));
         msg.setVisible(true);
+        sortList.clear();
         return true;
     }
 

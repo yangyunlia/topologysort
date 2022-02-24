@@ -73,14 +73,18 @@ public class GraphList implements Graph{
         sort(list);
         JFrame msg = new JFrame();
         msg.setBounds(300,300, 100, 100);
-        msg.add(new JLabel("完成"));
+        if(sortList.get(0).length < vNum) {
+            msg.add(new JLabel("完成,有环"));
+        } else {
+            msg.add(new JLabel("完成,无环"));
+        }
         msg.setVisible(true);
         sortList.clear();
         return true;
     }
 
     public synchronized void sort(LinkedList<Integer> nodes) {
-        if(result.size() == vNum) {
+        if(nodes.size() == 0) {
             Integer[] r = new Integer[result.size()];
             for (int i = 0; i < result.size(); i++) {
                 r[i] = result.get(i);

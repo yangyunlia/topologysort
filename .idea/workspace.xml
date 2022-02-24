@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GraphList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GraphMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Head.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +36,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/jdk/lib/src.zip" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/algorithms" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -77,7 +76,13 @@
       <workItem from="1645443987156" duration="1055000" />
       <workItem from="1645531623203" duration="2530000" />
       <workItem from="1645534511754" duration="28000" />
-      <workItem from="1645536927779" duration="1748000" />
+      <workItem from="1645536927779" duration="2377000" />
+      <workItem from="1645583507450" duration="1083000" />
+      <workItem from="1645591606632" duration="9000" />
+      <workItem from="1645591679777" duration="45000" />
+      <workItem from="1645668470940" duration="644000" />
+      <workItem from="1645669200383" duration="5000" />
+      <workItem from="1645707049541" duration="614000" />
     </task>
     <servers />
   </component>
@@ -111,6 +116,6 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/topologysort$Main.ic" NAME="Main Coverage Results" MODIFIED="1645418770998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/topologysort$Main.ic" NAME="Main Coverage Results" MODIFIED="1645668471662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
